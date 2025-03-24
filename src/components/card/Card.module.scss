@@ -1,0 +1,47 @@
+.card {
+  border: 1px solid black;
+  margin: 10px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.column {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cityWrapper {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: xx-large;
+  }
+  p {
+    font-weight: 500;
+  }
+}
+
+.imgWrapper {
+  display: flex;
+  align-items: center;
+
+  p {
+    font-size: xx-large;
+  }
+}
+
+.infoColumn {
+  margin: 10px;
+}
+.predictionsWrapper {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.predictionsBlock {
+  display: flex;
+  flex-direction: column;
+}
