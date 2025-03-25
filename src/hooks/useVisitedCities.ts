@@ -27,6 +27,8 @@ export const useVisitedCities = () => {
       updatedCities = [...visitedCities, { code: cityCode, name: cityName, count: 1 }];
     }
 
+    updatedCities.sort((a, b) => b.count - a.count);
+
     setVisitedCities(updatedCities);
     localStorage.setItem('visitedCities', JSON.stringify(updatedCities));
   };
