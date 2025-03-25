@@ -8,7 +8,10 @@ type SearchInputProps = {
 const SearchInput = ({ value, setValue }: SearchInputProps) => {
   return (
     <div className={styles.searchWrapper}>
-      <input value={value} onChange={(e) => setValue(e.target.value)} placeholder="Search for Location" />
+      <div className={styles.inputWrapper}>
+        <input value={value} onChange={(e) => setValue(e.target.value)} placeholder="Search for Location" />
+        <img src="./search.png" alt="search icon" />
+      </div>
     </div>
   );
 };
