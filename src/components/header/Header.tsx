@@ -2,7 +2,7 @@ import styles from './Header.module.scss';
 
 const Header = () => {
   return (
-    <header className={styles.container}>
+    <header className={styles.header}>
       <h1>Weather App</h1>
     </header>
   );
