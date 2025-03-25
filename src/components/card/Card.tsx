@@ -9,9 +9,10 @@ type Props = {
   wind: number;
   gusts: number;
   humidity: number;
+  precipitation: number;
 };
 
-const Card = ({ city, temperature, feelsLike, wind, gusts, humidity }: Props) => {
+const Card = ({ city, temperature, feelsLike, wind, gusts, humidity, precipitation }: Props) => {
   return (
     <div className={styles.card}>
       <div className={styles.column}>
@@ -26,20 +27,19 @@ const Card = ({ city, temperature, feelsLike, wind, gusts, humidity }: Props) =>
         </div>
       </div>
 
-      <div className={styles.infoColumn}>
-        <div>
-          <p>Next Hour:</p>
-          <div className={styles.predictionsWrapper}>
-            <div className={styles.predictionsBlock}>
-              <p>Feels Like: {feelsLike} °C </p>
-              <p>
-                Wind Speed (Gusts): {wind} ({gusts}) m/s
-              </p>
-            </div>
-            <div className={styles.predictionsBlock}>
-              <p>Relative Humidity: {humidity} % </p>
-              <p>Pressure will slightly change </p>
-            </div>
+      <div>
+        <h4>Next Hour:</h4>
+
+        <div className={styles.predictionsWrapper}>
+          <div className={styles.predictionsBlock}>
+            <p>Feels Like: {feelsLike} °C </p>
+            <p>
+              Wind Speed (Gusts): {wind} ({gusts}) m/s
+            </p>
+          </div>
+          <div className={styles.predictionsBlock}>
+            <p>Relative Humidity: {humidity} % </p>
+            <p>Precipitation: {precipitation} mm</p>
           </div>
         </div>
       </div>
