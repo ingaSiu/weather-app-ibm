@@ -1,8 +1,26 @@
 .searchWrapper {
   position: relative;
+  width: 100%;
 
-  input {
-    width: 100%;
+  .inputWrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    background-color: white;
+    border: 1px solid black;
+    padding: 0px 10px;
+
+    img {
+      width: 20px;
+    }
+
+    input {
+      border: none;
+      outline: none;
+      width: 100%;
+      font-size: 1rem;
+      padding: 14px 4px;
+    }
   }
 
   ul {
