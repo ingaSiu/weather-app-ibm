@@ -9,3 +9,21 @@ export function getFormattedDate(): string {
   const formattedDate = today.toLocaleDateString('en-GB', options);
   return formattedDate.replace(' ', ', ');
 }
+
+export function getDayOfWeek(dateString: string): string {
+  const today = new Date(dateString);
+  const options: Intl.DateTimeFormatOptions = {
+    weekday: 'long',
+  };
+  return today.toLocaleDateString('en-GB', options);
+}
+
+export function getShortDate(dateString: string): string {
+  const today = new Date(dateString);
+  const options: Intl.DateTimeFormatOptions = {
+    month: 'numeric',
+    day: 'numeric',
+  };
+  const formattedDate = today.toLocaleDateString('lt-LT', options);
+  return formattedDate.replace('/', '–');
+}
