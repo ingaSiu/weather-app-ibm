@@ -1,6 +1,8 @@
+@use '../../scss/colors' as c;
+
 .loader {
-  border: 7px solid white;
-  border-top: 7px solid #d3d3d3;
+  border: 7px solid c.$colorWhite;
+  border-top: 7px solid c.$colorActiveElement;
   border-radius: 50%;
   width: 50px;
   height: 50px;

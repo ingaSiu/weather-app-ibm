@@ -1,3 +1,5 @@
+@use '../../scss/colors' as c;
+
 .searchWrapper {
   position: relative;
   width: 100%;
@@ -6,8 +8,8 @@
     display: flex;
     align-items: center;
     gap: 0.3rem;
-    background-color: white;
-    border: 1px solid black;
+    background-color: c.$colorWhite;
+    border: 1px solid c.$colorBlack;
     padding: 0px 10px;
 
     img {
@@ -27,8 +29,8 @@
     position: absolute;
     top: 100%;
     width: 100%;
-    background: white;
-    border: 1px solid #ccc;
+    background: c.$colorWhite;
+    border: 1px solid c.$colorAccentGrey;
     max-height: 200px;
     overflow-y: auto;
     list-style: none;
@@ -40,7 +42,7 @@
       cursor: pointer;
 
       &:hover {
-        background: #f0f0f0;
+        background: c.$colorLightGrey;
       }
     }
   }

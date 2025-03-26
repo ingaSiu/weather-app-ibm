@@ -1,4 +1,6 @@
+@use '../../scss/colors' as c;
+
 .header {
-  border-bottom: 1px solid gainsboro;
+  border-bottom: 1px solid c.$colorAccentGrey;
   padding: 0.5rem 1rem;
 }
