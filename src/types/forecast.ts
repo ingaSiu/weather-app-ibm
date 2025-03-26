@@ -43,3 +43,9 @@ export type DailyForecast = {
     conditionCode: string;
   };
 };
+
+export type HourlyForecast = {
+  forecastTimeUtc: string;
+  airTemperature: number;
+  conditionCode: string;
+};
