@@ -1,6 +1,8 @@
 # Weather Tracker APP 🌦️
 A responsive web application that provides real-time weather updates and a 6-day forecast.
 
+:eyes: [Demo](https://weather-app-ibm.ingasiu.lt/)
+
 ## Features:
 - Searchable dropdown to select a city for weather forecast;
 - Stores three most viewed cities in the browser's Local Storage;
