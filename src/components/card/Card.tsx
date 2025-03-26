@@ -1,18 +1,21 @@
 import { getFormattedDate } from '../../utils/getDate';
+import { getImageSrc } from '../../utils/getImageSrc';
 import styles from './Card.module.scss';
 
 type Props = {
   city: string;
-  //imgTitle: string;
   temperature: number;
   feelsLike: number;
   wind: number;
   gusts: number;
   humidity: number;
   precipitation: number;
+  conditionCode: string;
 };
 
-const Card = ({ city, temperature, feelsLike, wind, gusts, humidity, precipitation }: Props) => {
+const Card = ({ city, temperature, feelsLike, wind, gusts, humidity, precipitation, conditionCode }: Props) => {
+  const currentHour = new Date().getHours();
+  const imageSrc = getImageSrc(conditionCode, currentHour);
   return (
     <div className={styles.card}>
       <div className={styles.column}>
@@ -22,7 +25,7 @@ const Card = ({ city, temperature, feelsLike, wind, gusts, humidity, precipitati
         </div>
 
         <div className={styles.imgWrapper}>
-          <img src="./rain.png" alt="weather prediction picture" />
+          <img src={imageSrc} alt="weather prediction picture" />
           <p>{temperature}°C</p>
         </div>
       </div>
