@@ -1,5 +1,12 @@
-# Weather Tracker APP 
+# Weather Tracker APP 🌦️
+A responsive web application that provides real-time weather updates and a 6-day forecast.
 
+## Features:
+- Searchable dropdown to select a city for weather forecast;
+- Stores three most viewed cities in the browser's Local Storage;
+- Displays the three most viewed cities for quick access;
+- Shows current weather conditions (temperature, wind, humidity, etc.) for the selected city;
+- Provides a 6-day weather forecast, displayed in smaller cards.
 
 ## Installation
 
